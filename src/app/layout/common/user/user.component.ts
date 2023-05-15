@@ -83,6 +83,13 @@ export class UserComponent implements OnInit, OnDestroy {
     }
 
     /**
+* Profile
+*/
+    profile(): void {
+        this._router.navigate(['/settings']);
+    }
+
+    /**
 * Sign in
 */
     signIn(): void {

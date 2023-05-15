@@ -2,6 +2,14 @@
 
     <notifications></notifications>
 
+    <button mat-icon-button>
+        <mat-icon svgIcon="mat_outline:favorite_border"></mat-icon>
+    </button>
+
+    <button mat-icon-button>
+        <mat-icon svgIcon="mat_outline:shopping_cart"></mat-icon>
+    </button>
+
     <!-- Button -->
     <button mat-icon-button [matMenuTriggerFor]="userActions">
         <span class="relative">
@@ -23,13 +31,9 @@
             </span>
         </button>
         <mat-divider class="my-2"></mat-divider>
-        <button mat-menu-item>
+        <button mat-menu-item (click)="profile()">
             <mat-icon [svgIcon]="'heroicons_outline:user-circle'"></mat-icon>
             <span>Profile</span>
-        </button>
-        <button mat-menu-item>
-            <mat-icon [svgIcon]="'heroicons_outline:cog'"></mat-icon>
-            <span>Settings</span>
         </button>
         <button mat-menu-item [matMenuTriggerFor]="userStatus">
             <mat-icon [svgIcon]="'heroicons_outline:dots-circle-horizontal'"></mat-icon>
