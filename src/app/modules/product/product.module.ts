@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { ProductComponent } from './product.component';
 import { productRoutes } from './product.routing';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
     declarations: [
@@ -15,6 +16,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
         RouterModule.forChild(productRoutes),
         MatIconModule,
         MatButtonModule,
+        MatDialogModule
     ]
 })
 export class ProductModule {

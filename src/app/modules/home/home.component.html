@@ -6,36 +6,236 @@
         <!-- CONTENT GOES HERE -->
         <div class="h-400 min-h-400 max-h-400 rounded-2xl">
 
-            <fuse-card class="flex flex-col md:flex-row max-w-80 md:max-w-160 w-full filter-shopping">
-                <div class="flex-0 w-80 md:w-60">
-                    <a [routerLink]="['products', 'vailonluon']">
-                        <img class="w-full h-full object-cover"
-                            src="https://angular-material.fusetheme.com/assets/images/cards/sneakers-03-448x560.jpg"
-                            alt="Card cover image">
-                    </a>
-                </div>
-                <div class="flex flex-col flex-auto m-8 mb-4">
-                    <div class="flex flex-col md:flex-row items-baseline justify-between">
-                        <div class="text-2xl leading-tight">White sneakers with red stripes</div>
-                        <div class="text-3xl font-semibold mt-4 md:mt-0 md:ml-6">$240.00</div>
-                    </div>
-                    <div class="text-md text-secondary mt-6">
-                        White sneakers are made of natural, biodegradable material. This feature alione makes them
-                        extremely nature friendly.
-                    </div>
-                    <hr class="w-full border-b mt-6 mb-4">
-                    <div class="flex items-center md:mt-auto -mx-3">
-                        <button class="px-3 mr-1" mat-button [color]="'primary'">
-                            <mat-icon class="icon-size-5" [svgIcon]="'heroicons_solid:shopping-cart'"></mat-icon>
-                            <span class="ml-2">Add to Cart</span>
-                        </button>
-                        <button class="ml-auto" mat-icon-button>
-                            <mat-icon class="icon-size-5 text-hint" [svgIcon]="'heroicons_solid:heart'"></mat-icon>
-                        </button>
+            <div class="recommends mb-12">
+                <div class="flex gap-3 items-center mb-4">
+                    <mat-icon class="text-orange-500" svgIcon="mat_outline:card_giftcard"></mat-icon>
+                    <div class="uppercase font-bold text-xl">
+                        Recommends
                     </div>
                 </div>
-            </fuse-card>
+                <div class="flex gap-4 flex-wrap">
+                    <fuse-card class="flex flex-col md:flex-row max-w-80 md:max-w-160 w-full filter-shopping">
+                        <div class="flex-0 w-80 md:w-60">
+                            <a [routerLink]="['products', 'vailonluon']">
+                                <img class="w-full h-full object-cover"
+                                    src="https://angular-material.fusetheme.com/assets/images/cards/sneakers-03-448x560.jpg"
+                                    alt="Card cover image">
+                            </a>
+                        </div>
+                        <div class="flex flex-col flex-auto m-8 mb-4">
+                            <div class="flex flex-col md:flex-row items-baseline justify-between">
+                                <div class="text-2xl leading-tight">White sneakers with red stripes</div>
+                                <div class="text-3xl font-semibold mt-4 md:mt-0 md:ml-6">$240.00</div>
+                            </div>
+                            <div class="text-md text-secondary mt-6">
+                                White sneakers are made of natural, biodegradable material. This feature alione makes
+                                them
+                                extremely nature friendly.
+                            </div>
+                            <hr class="w-full border-b mt-6 mb-4">
+                            <div class="flex items-center md:mt-auto -mx-3">
+                                <button class="px-3 mr-1" mat-button [color]="'primary'">
+                                    <mat-icon class="icon-size-5"
+                                        [svgIcon]="'heroicons_solid:shopping-cart'"></mat-icon>
+                                    <span class="ml-2">Add to Cart</span>
+                                </button>
+                                <button class="ml-auto" mat-icon-button>
+                                    <mat-icon class="icon-size-5 text-hint"
+                                        [svgIcon]="'heroicons_solid:heart'"></mat-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </fuse-card>
+                    <fuse-card class="flex flex-col md:flex-row max-w-80 md:max-w-160 w-full filter-shopping">
+                        <div class="flex-0 w-80 md:w-60">
+                            <a [routerLink]="['products', 'vailonluon']">
+                                <img class="w-full h-full object-cover"
+                                    src="https://angular-material.fusetheme.com/assets/images/cards/sneakers-03-448x560.jpg"
+                                    alt="Card cover image">
+                            </a>
+                        </div>
+                        <div class="flex flex-col flex-auto m-8 mb-4">
+                            <div class="flex flex-col md:flex-row items-baseline justify-between">
+                                <div class="text-2xl leading-tight">White sneakers with red stripes</div>
+                                <div class="text-3xl font-semibold mt-4 md:mt-0 md:ml-6">$240.00</div>
+                            </div>
+                            <div class="text-md text-secondary mt-6">
+                                White sneakers are made of natural, biodegradable material. This feature alione makes
+                                them
+                                extremely nature friendly.
+                            </div>
+                            <hr class="w-full border-b mt-6 mb-4">
+                            <div class="flex items-center md:mt-auto -mx-3">
+                                <button class="px-3 mr-1" mat-button [color]="'primary'">
+                                    <mat-icon class="icon-size-5"
+                                        [svgIcon]="'heroicons_solid:shopping-cart'"></mat-icon>
+                                    <span class="ml-2">Add to Cart</span>
+                                </button>
+                                <button class="ml-auto" mat-icon-button>
+                                    <mat-icon class="icon-size-5 text-hint"
+                                        [svgIcon]="'heroicons_solid:heart'"></mat-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </fuse-card>
+                    <fuse-card class="flex flex-col md:flex-row max-w-80 md:max-w-160 w-full filter-shopping">
+                        <div class="flex-0 w-80 md:w-60">
+                            <a [routerLink]="['products', 'vailonluon']">
+                                <img class="w-full h-full object-cover"
+                                    src="https://angular-material.fusetheme.com/assets/images/cards/sneakers-03-448x560.jpg"
+                                    alt="Card cover image">
+                            </a>
+                        </div>
+                        <div class="flex flex-col flex-auto m-8 mb-4">
+                            <div class="flex flex-col md:flex-row items-baseline justify-between">
+                                <div class="text-2xl leading-tight">White sneakers with red stripes</div>
+                                <div class="text-3xl font-semibold mt-4 md:mt-0 md:ml-6">$240.00</div>
+                            </div>
+                            <div class="text-md text-secondary mt-6">
+                                White sneakers are made of natural, biodegradable material. This feature alione makes
+                                them
+                                extremely nature friendly.
+                            </div>
+                            <hr class="w-full border-b mt-6 mb-4">
+                            <div class="flex items-center md:mt-auto -mx-3">
+                                <button class="px-3 mr-1" mat-button [color]="'primary'">
+                                    <mat-icon class="icon-size-5"
+                                        [svgIcon]="'heroicons_solid:shopping-cart'"></mat-icon>
+                                    <span class="ml-2">Add to Cart</span>
+                                </button>
+                                <button class="ml-auto" mat-icon-button>
+                                    <mat-icon class="icon-size-5 text-hint"
+                                        [svgIcon]="'heroicons_solid:heart'"></mat-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </fuse-card>
+                    <fuse-card class="flex flex-col md:flex-row max-w-80 md:max-w-160 w-full filter-shopping">
+                        <div class="flex-0 w-80 md:w-60">
+                            <a [routerLink]="['products', 'vailonluon']">
+                                <img class="w-full h-full object-cover"
+                                    src="https://angular-material.fusetheme.com/assets/images/cards/sneakers-03-448x560.jpg"
+                                    alt="Card cover image">
+                            </a>
+                        </div>
+                        <div class="flex flex-col flex-auto m-8 mb-4">
+                            <div class="flex flex-col md:flex-row items-baseline justify-between">
+                                <div class="text-2xl leading-tight">White sneakers with red stripes</div>
+                                <div class="text-3xl font-semibold mt-4 md:mt-0 md:ml-6">$240.00</div>
+                            </div>
+                            <div class="text-md text-secondary mt-6">
+                                White sneakers are made of natural, biodegradable material. This feature alione makes
+                                them
+                                extremely nature friendly.
+                            </div>
+                            <hr class="w-full border-b mt-6 mb-4">
+                            <div class="flex items-center md:mt-auto -mx-3">
+                                <button class="px-3 mr-1" mat-button [color]="'primary'">
+                                    <mat-icon class="icon-size-5"
+                                        [svgIcon]="'heroicons_solid:shopping-cart'"></mat-icon>
+                                    <span class="ml-2">Add to Cart</span>
+                                </button>
+                                <button class="ml-auto" mat-icon-button>
+                                    <mat-icon class="icon-size-5 text-hint"
+                                        [svgIcon]="'heroicons_solid:heart'"></mat-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </fuse-card>
+                </div>
+            </div>
+            <div class="about mb-12">
+                <div class="flex gap-3 items-center mb-4">
+                    <mat-icon class="text-orange-500" svgIcon="mat_outline:shopping_bag"></mat-icon>
+                    <div class="uppercase font-bold text-xl">
+                        About
+                        <span class="font-extrabold">
+                            E-Gift
+                        </span>
+                    </div>
+                </div>
+                <!-- Container for demo purpose -->
+                <div class="mx-auto">
 
+                    <!-- Section: Design Block -->
+                    <section class="mb-32 text-gray-800">
+                        <!-- Jumbotron -->
+                        <div class="container mx-auto xl:px-32 text-center lg:text-left">
+                            <div class="grid lg:grid-cols-2 items-center">
+                                <div class="mb-12 lg:mb-0">
+                                    <div class="block rounded-lg shadow-lg px-6 py-12 md:px-12 lg:-mr-14"
+                                        style="background: hsla(0, 0%, 100%, 0.55); backdrop-filter: blur(30px)">
+                                        <h2 class="text-3xl font-bold mb-6">Enjoy the moment</h2>
+                                        <p class="text-gray-500 mb-6 pb-2 lg:pb-0">
+                                            At E-Gift, we have scoured the globe to bring you an enchanting assortment
+                                            of handpicked gifts that capture the essence of love, joy, and appreciation.
+                                            Whether you're searching for a heartfelt present for a loved one's birthday,
+                                            an anniversary surprise, a festive celebration, or simply a gesture of
+                                            gratitude, our diverse selection is sure to inspire and delight.
+                                        </p>
+
+                                        <div
+                                            class="flex flex-col md:flex-row md:justify-around lg:justify-between mb-6 mx-auto">
+                                            <p class="flex items-center mb-4 md:mb-2 lg:mb-0 mx-auto md:mx-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                                    class="w-4 h-4 mr-2">
+                                                    <path fill="currentColor"
+                                                        d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                                                    </path>
+                                                </svg>
+                                                Best price
+                                            </p>
+
+                                            <p class="flex items-center mb-4 md:mb-2 lg:mb-0 mx-auto md:mx-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                                    class="w-4 h-4 mr-2">
+                                                    <path fill="currentColor"
+                                                        d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                                                    </path>
+                                                </svg>
+                                                Best quality
+                                            </p>
+
+                                            <p class="flex items-center mb-2 lg:mb-0 mx-auto md:mx-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                                    class="w-4 h-4 mr-2">
+                                                    <path fill="currentColor"
+                                                        d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                                                    </path>
+                                                </svg>
+                                                Best experience
+                                            </p>
+                                        </div>
+
+                                        <p class="text-gray-500 mb-0">
+                                            Our team of gift connoisseurs understands the power of a well-chosen gift to
+                                            express emotions and convey your deepest sentiments. From stunning
+                                            personalized jewelry and elegant home decor to gourmet treats and luxurious
+                                            spa sets, our thoughtfully curated categories cater to a wide range of
+                                            interests and tastes. We take pride in offering products of exceptional
+                                            quality and craftsmanship, ensuring that each gift is a true reflection of
+                                            your care and thoughtfulness.
+                                        </p>
+                                        <p class="text-gray-500 mb-0">
+                                            We understand that finding the perfect gift can sometimes be a
+                                            time-consuming task. That's why we've designed our website to provide you
+                                            with a seamless and enjoyable shopping experience. Our intuitive interface,
+                                            secure payment options, and reliable worldwide shipping ensure that your
+                                            gift arrives on time, wherever your loved ones may be.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <img src="https://mdbootstrap.com/img/new/ecommerce/vertical/117.jpg"
+                                        class="w-full rounded-lg shadow-lg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
             <router-outlet></router-outlet>
         </div>
 
