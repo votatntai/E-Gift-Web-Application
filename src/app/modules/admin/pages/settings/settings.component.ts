@@ -47,12 +47,6 @@ export class SettingsComponent implements OnInit, OnDestroy {
                 icon: 'heroicons_outline:lock-closed',
                 title: 'Security',
                 description: 'Manage your password and 2-step verification preferences'
-            },
-            {
-                id: 'notifications',
-                icon: 'heroicons_outline:bell',
-                title: 'Notifications',
-                description: 'Manage when you\'ll be notified on which channels'
             }
         ];
 

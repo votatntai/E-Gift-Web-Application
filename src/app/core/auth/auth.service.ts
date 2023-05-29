@@ -59,13 +59,13 @@ export class AuthService {
      *
      * @param credentials
      */
-    signIn(credentials: { email: string; password: string }): Observable<any> {
+    signIn(credentials: { username: string; password: string }): Observable<any> {
         // Throw error, if the user is already logged in
         if (this._authenticated) {
             return throwError('User is already logged in.');
         }
 
-        return this._httpClient.post('api/auth/sign-in', credentials).pipe(
+        return this._httpClient.post('/api/auth', credentials).pipe(
             switchMap((response: any) => {
 
                 // Store the access token in the local storage
@@ -75,7 +75,7 @@ export class AuthService {
                 this._authenticated = true;
 
                 // Store the user on the user service
-                this._userService.user = response.user;
+                this._userService.user = response;
 
                 // Return a new observable with the response
                 return of(response);
@@ -87,10 +87,10 @@ export class AuthService {
      * Sign in using the access token
      */
     signInUsingToken(): Observable<any> {
+        console.log('hahaha');
+
         // Sign in using the token
-        return this._httpClient.post('api/auth/sign-in-with-token', {
-            accessToken: this.accessToken
-        }).pipe(
+        return this._httpClient.get('/api/auth').pipe(
             catchError(() =>
 
                 // Return false
@@ -113,7 +113,7 @@ export class AuthService {
                 this._authenticated = true;
 
                 // Store the user on the user service
-                this._userService.user = response.user;
+                this._userService.user = response;
 
                 // Return true
                 return of(true);
